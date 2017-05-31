@@ -4,7 +4,7 @@
 <head>
     <title>Vaporwave - A-Frame</title>
     <meta name="description" content="Vaporwave aesthetic text By Ada Rose Edwards (@lady_ada_king).">
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="node_modules/aframe/build/aframe.js"></script>
 
     <script src="node_modules/aframe-look-at-component/dist/aframe-look-at-component.min.js"></script>
     <script src="bower_components/Keypress/keypress.js"></script>
@@ -19,114 +19,104 @@
 
         <a-asset-item id="mv-obj" src="galery/galeria.obj"></a-asset-item>
         <a-asset-item id="mv-mtl" src="galery/galeria.mtl"></a-asset-item>
+        <!-- loby -->
+        <img id="mtext" src="img/text/E-gallery2.jpg"/>
+        <img id="vtext" src="img/text/E-gallery3.jpg"/>
+        <img id="clasic_text" src="img/text/E-gallery4.jpg">
 
-        <img id="ms-1" src="img/memes.png">
-        <img id="ms-2" src="img/pepe.png">
+        <!-- Principal -->
+        <img id="clasic1" src="img/classic/BeFunky Collage.jpg"/>
+        <img id="memes1"src="img/memes/angel.png"/>
+        <img id="video1" src="img/video/tv1.png">
+        <img id="sculp1" src="img/sculpture/thinker.png"/>
+
+        <!--Iniccio-->
+        <img id="initbridge" src="img/text/E-gallery5.jpg"/>
+        <img id="init" src="img/text/E-gallery.jpg"/>
+
+
+
         <!-- <img id="ms-half" src="assets/spherical/ms-window-half.jpg"> -->
         <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/http://i.imgur.com/1hyyIUi.jpg" crossorigin="anonymous" />
         <img src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" id="grid" crossorigin="anonymous">
         <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
         <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
-        <img id="pepe" src="img/pepe.png" crossorigin="anonymous" />
-        <img id="lememes" src="img/memes.png" crossorigin="anonymous" />
+
         <!--<video id="pants" autoplay loop="true" src="videos/memes.mp4"></video>-->
-        <a-asset-item id="galery" src="galery/galeria.obj"></a-asset-item>
-        <a-asset-item id="galery-mtl" src="galery/galeria.mtl"></a-asset-item>
         <a-asset-item id="dawningFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2FdawningOfANewDayRegular.typeface.json?1490305922844"></a-asset-item>
         <a-asset-item id="exoFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150"></a-asset-item>
         <a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
 
     </a-assets>
 
-    <!-- Global Settings -->
-    <a-sky color="#64e6ff"></a-sky>
+    <!-- Sky and floor -->
+    <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+    <a-entity id="vapor" geometry="primitive: plane" material="color: blue"
+              position="0 0 0" sound="src: url(music/test.mp3); autoplay: true; volume:0.3"></a-entity>
+    <a-entity id="pant" geometry="primitive: plane" material="color: blue"
+              position="0 0 -45" sound="src: url(music/pants.mp3); autoplay: true; volume:0.3"></a-entity>
 
     <!-- World Elements -->
     <a-entity id="world">
 
         <!-- Environment model -->
-        <a-entity obj-model="obj: #mv-obj; mtl: #mv-mtl" scale=".3 .3 .3" position="6 -.3 -13"></a-entity>
+        <a-entity obj-model="obj: #mv-obj; mtl: #mv-mtl" position="0 0 0"></a-entity>
 
-        <!-- Spherical image test -->
-        <a-entity>
+    </a-entity>
 
-            <!-- Close to window -->
-            <a-entity position=".8 1.7 14">
-                <a-sphere class="ms-spherical" radius="2.1" material="src: #ms-2; side: back; opacity: 1" rotation="0 100 0"></a-sphere>
-                <a-sphere class="ms-exit" position="-.5 -.2 -.9" radius=".1" material="color: #333; opacity: .7"></a-sphere>
-            </a-entity>
 
-            <!-- Middle layer -->
-            <!-- <a-entity position="5 1.7 14">
-               <a-sphere class="ms-spherical" radius="2.1" material="src: #ms-half; side: back; opacity: 1" rotation="0 100 0"></a-sphere>
-            </a-entity> -->
+    <a-entity
+            geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
+            material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;"></a-entity>
 
-            <!-- Close to counter -->
-            <a-entity position="9.2 1.7 14">
-                <a-sphere class="ms-spherical" radius="2.1" material="src: #ms-1; side: back; opacity: 1" rotation="0 100 0"></a-sphere>
-                <a-sphere class="ms-exit" position="-1.9 .1 -.9" radius=".1" material="color: #333; opacity: .7"></a-sphere>
-            </a-entity>
+    <a-entity light="color: #ccccff; intensity: 0.8; type: ambient;" visible=""></a-entity>
+    <a-entity light="color: ffaaff; intensity: 0.1" position="5 5 5"></a-entity>
+    <a-entity light="color: white; intensity: 0.1" position="-5 5 15"></a-entity>
+    <a-entity light="color: white; intensity: 0.8 type: ambient;"></a-entity>
 
-        </a-entity>
+    <a-entity id="text-room">
+        <a-image id="txt-v" position="-14.93 10 -3" src="#vtext" scale="7 7 0" rotation="0 90 0">
+        </a-image>
+        <a-image id="txt-m" position="13.15 10 -3" src="#mtext" scale="7 7 0" rotation="0 -90 0">
+        </a-image>
+        <a-image id="txt-c" position="5 10 9.8" src="#clasic_text" scale="7 7 0" rotation="0 -180 0">
+        </a-image>
+    </a-entity>
+    <!-- Sala central-->
+    <a-entity id="es">
         <a-entity scale="2 2 2" geometry="primitive: torusKnot" position="0 6 -5" material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
             <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
         </a-entity>
-
-        <!-- Sala central-->
-
-        <a-image id="es1-s1" position="-10 3.2 4.9" src="#pepe" look-at="[camera]" >
+        <a-image id="es1-s1" position="-10 5 4.9" src="#clasic1" look-at="#human-camera" scale="4 4 0">
         </a-image>
-        <a-image id="es2-s1" position="8.9 3.2 -15.6" src="#pepe" look-at="[camera]" >
+        <a-image id="es2-s1" position="8.9 4 -16" src="#memes1" look-at="#human-camera" scale="4 4 0">
         </a-image>
-        <a-image id="es3-s1" position="-9.7 3.2 -15.8"src="#pepe" look-at="[camera]" >
+        <a-image id="es3-s1" position="-9.7 3.2 -15.8"src="#video1" look-at="#human-camera" scale="4 4 0">
         </a-image>
-        <a-image id="es4-s1" position="8.7 3.2 4.6" src="#pepe" look-at="[camera]" >
+        <a-image id="es4-s1" position="9.5 4 5.5" src="#sculp1" look-at="#human-camera" scale="4 4 0">
         </a-image>
-        <!-- Sala inicial -->
-        <a-image id="es4-s1" position="0 10 -48" src="#lememes" width="20" height="10" >
+    </a-entity>
+    <!-- Sala inicial -->
+    <a-entity id="si">
+        <a-image id="init-1" position="0 10 -48" src="#init" scale="20 20 0" >
         </a-image>
-        <!-- Sala clasica -->
-        <!-- Sala video
-        <a-video src="#pants" width="16" height="9" position="0 1 -30"></a-video>
-        -->
-        <a-entity id="memes-text" position="0 1 -30" text-geometry="value: Le memes; font: #font-memes; style: italic; size:10 ; weight: bold; height: 0;"
-                  material="shader: flat; color: white"></a-entity>
-        <a-image id="es4-s1" position="8.7 3.2 4.6" src="#pepe" look-at="[camera]" >
+        <a-image id="init-2" position="5 10 -30" src="#initbridge" rotation="45 -90 -90" scale="15 15 0"   >
         </a-image>
-
-        <a-entity id="vapor" geometry="primitive: plane" material="color: blue"
-                  position="0 0 0" sound="src: url(music/test.mp3); autoplay: true; volume:0.3"></a-entity>
-        <a-entity id="pant" geometry="primitive: plane" material="color: blue"
-                  position="0 0 -45" sound="src: url(music/pants.mp3); autoplay: true; volume:0.3"></a-entity>
-
-        <a-entity position="0 5 0" rotation="5 0 0">
-            <a-entity
-                    rotation="0 0 5"
-                    position="0 2 0.2"
-                    text-geometry="value: Virtual Reality; font: #dawningFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;"
-                    material="color:lavenderblush; metalness:1; roughness: 0; sphericalEnvMap: #pink;"
-            ></a-entity>
-
-            <a-entity position="-0.5 0.5 -0.5" scale="0.6 1.2 1" text-geometry="value: VAPORWAVE; font: #exoFont; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:pink; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity>
-
-            <a-entity position="1 0 0.3" text-geometry="value: Aesthetic; font: #exoItalicFont; style: italic; size: 0.8; weight: bold; height: 0;"
-                      material="shader: flat; color: white"></a-entity>
-            <a-entity position="1 0 0.3" text-geometry="value: Aesthetic; font: #exoItalicFont; style: italic; size: 0.8; weight: bold; height: 0; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"
-                      material="shader: flat; color: white; transparent: true; opacity: 0.4"></a-entity>
-        </a-entity>
-
-        <a-entity
-                geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
-                material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;"></a-entity>
-
-        <a-entity light="color: #ccccff; intensity: 0.8; type: ambient;" visible=""></a-entity>
-        <a-entity light="color: ffaaff; intensity: 0.1" position="5 5 5"></a-entity>
-        <a-entity light="color: white; intensity: 0.1" position="-5 5 15"></a-entity>
-        <a-entity light="color: white; intensity: 0.8 type: ambient;"></a-entity>
     </a-entity>
 
+
+    <!-- Sala clasica -->
+    <a-entity id="cl">
+
+    </a-entity>
+    <!-- Sala video
+
+    <a-video src="#pants" width="16" height="9" position="0 1 -30"></a-video>
+    -->
+    <a-entity id="vd"></a-entity>
+
     <!-- Human Camera, put down here for a reason, but I can't remember why -->
-    <a-camera id="human-camera" position="0 1.7 0" wasd-controls="fly:true" active="true" near=".05">
+    <a-camera id="human-camera" position="0 2 -45" wasd-controls active="true" fov="50">
         <a-entity cursor="fuse: true; maxDistance: 50; timeout: 500" position="0 0 -2" geometry="primitive: plane; height: .05; width: .05"  material="color: #fff"></a-entity>
     </a-camera>
 
@@ -176,26 +166,31 @@
         // Situate the camera based on given position
         setCamera(camera, settings.cameraPosition);
 
-        // Place all of the transition orbs around the scene
+        // Place all of the transition orbs around the sce
         placeTransitionOrbs([
-            {x: -5.499636956049418,    y: 6.3,     z: -12.971373578044469},
-            {x: 12.709765049944446,    y: 6.6,     z: -8.388245758668296},
-            {x: 17.54385488277026,     y: 6.3,     z: -12.965917521979673},
-            {x: 19.155885460376894,    y: 0,       z: -26.4025057439792},
-            {x: -2.8239695631562753,   y: 0,       z: -7.139200987208032},
-            {x: 8.900519242752663,     y: 0,       z: -1.9215587285872922},
-            {x: -4.3808164081879015,   y: 0,       z: -17.19795420116629},
-            {x: -4.183515004950278,    y: 0,       z: -24.184966522656342},
-            {x: 4.346838095657409,     y: 0,       z: -14.966443485230126},
-            {x: 16.950260752918833,    y: 17.5,    z: -18.575435892985322},
-            {x: 12.501794418453516,    y: 17.5,    z: -13.6169492206195},
-            {x: 16.54346786694255,     y: 23.7,    z: -23.495441524818382}
+            {x: 0,    y: 2,     z: -18.5},
+            {x: -11.5,    y: 2,     z: -8.96},
+            {x: 0,     y: 2,     z: 6},
+            {x: 12.5,    y: 2,       z: -8.96},
+            {x: 0,   y: 2,       z: -31.1},
+            {x: 0,     y: 2,       z: -44.7},
+            {x: -22,   y: 2,       z: -9.3},
+            {x: -39.9,    y: 2,       z: -9.3},
+            {x: -2.4,     y: 2,       z: -9.3},
+            {x: 35.75,    y: 2,    z: -9.3},
+            {x: 38.75,    y: 2,    z: 1.9},
+            {x: 38.7,     y: 2,    z: -14.48},
+            {x: -42.86,    y: 2,    z: 1.56},
+            {x: -42.8,     y: 2,    z: -15.8},
+            {x: 0,    y: 2,    z: 15.32},
+            {x: 0,     y: 2,    z: 28.95},
+            {x: 0,     y: 50,    z: 0}
         ], true);
 
         // Create the spherical image orbs array
         var sphericalImageTargetOrbPositions = [
-            {x: 7.2, y: 0, z: 14},
-            {x: 2.6, y: 0, z: 14}
+            {x: 7.2, y: -100, z: 14},
+            {x: 2.6, y: -100, z: 14}
         ];
 
         // And place them around the scene
@@ -588,7 +583,7 @@
             addEl(world, {
                 entityType: 'sphere',
                 radius: .3,
-                color: '#333',
+                color: '#bc0d11',
                 opacity: .7,
                 position: orbPositions[i],
                 class: addClass
