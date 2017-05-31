@@ -53,8 +53,6 @@
     <a-sky src="#sky" rotation="0 -90 0"></a-sky>
     <a-entity id="vapor" geometry="primitive: plane" material="color: blue"
               position="0 0 0" sound="src: url(music/test.mp3); autoplay: true; volume:0.3"></a-entity>
-    <a-entity id="pant" geometry="primitive: plane" material="color: blue"
-              position="0 0 -45" sound="src: url(music/pants.mp3); autoplay: true; volume:0.3"></a-entity>
 
     <!-- World Elements -->
     <a-entity id="world">
@@ -107,7 +105,12 @@
 
     <!-- Sala clasica -->
     <a-entity id="cl">
-
+        <a-image id="init-1" position="7.48 3.2 24.28" src="#init" scale="20 20 0" >
+        </a-image>
+        <a-image id="init-1" position="7.48 3.2 28.23" src="#init" scale="20 20 0" >
+        </a-image>
+        <a-image id="init-1" position="7.48 3.2 -32.85" src="#init" scale="20 20 0" >
+        </a-image>
     </a-entity>
     <!-- Sala video
 
