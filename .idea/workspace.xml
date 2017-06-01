@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/test.html" line="103" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="9ff801cc-516a-45c9-be07-9d8cb7fe4ffe" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fast.html" afterPath="$PROJECT_DIR$/fast.html" />
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +24,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.html">
+      <file leaf-file-name="movil.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movil.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="576">
               <caret line="76" column="75" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="75" />
+              <folding />
+=======
+            <state relative-caret-position="508">
+              <caret line="304" column="18" lean-forward="true" selection-start-line="304" selection-start-column="18" selection-end-line="304" selection-end-column="18" />
+              <folding>
+                <element signature="n#a-entity#6;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a-entity#7;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a-entity#10;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movil_test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movil_test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="330" column="39" lean-forward="true" selection-start-line="330" selection-start-column="39" selection-end-line="330" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -36,8 +57,18 @@
       <file leaf-file-name="11-settings.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/11/11-settings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="221">
+              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="12-settings.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/11/12-settings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -56,15 +87,40 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="425">
               <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
+=======
+            <state relative-caret-position="287">
+              <caret line="148" column="4" lean-forward="true" selection-start-line="148" selection-start-column="4" selection-end-line="149" selection-end-column="14" />
+              <folding>
+                <element signature="n#a-entity#8;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
                 <element signature="n#a-entity#11;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="fast.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fast.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="61" column="75" lean-forward="false" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="75" />
+              <folding>
+                <element signature="n#a-entity#6;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a-entity#7;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a-entity#9;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#10094#10196#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,6 +133,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>0</find>
@@ -85,8 +148,15 @@
       <find>sky</find>
       <find>lem</find>
       <find>light</find>
+<<<<<<< HEAD
       <find>video</find>
       <find>text</find>
+=======
+      <find>spher</find>
+      <find>init-1</find>
+      <find>init</find>
+      <find>11-se</find>
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,10 +166,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$USER_HOME$/Downloads/localhost-63342-i-gallery-index-html (1).htm" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/assets/11/11-settings.json" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.html" />
+=======
+        <option value="$PROJECT_DIR$/sculpture.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/movil.html" />
+        <option value="$PROJECT_DIR$/movil_test.html" />
+        <option value="$PROJECT_DIR$/fast.html" />
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
       </list>
     </option>
   </component>
@@ -168,6 +248,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -205,6 +286,13 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="memes" />
+=======
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="11" />
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,18 +311,21 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\usuario\WebstormProjects\I-Gallery\bower_components" />
-      <recent name="C:\Users\usuario\WebstormProjects\I-Gallery\videos" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\usuario\WebstormProjects\I-Gallery\img\memes" />
       <recent name="C:\Users\usuario\WebstormProjects\I-Gallery\img\video" />
       <recent name="C:\Users\usuario\WebstormProjects\I-Gallery\img" />
       <recent name="C:\Users\usuario\WebstormProjects\I-Gallery\img\sculpture" />
       <recent name="C:\Users\usuario\WebstormProjects\I-Gallery\img\classic" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\usuario\WebstormProjects\I-Gallery\assets\11" />
+      <recent name="C:\Users\usuario\WebstormProjects\I-Gallery" />
+      <recent name="C:\Users\usuario\WebstormProjects\I-Gallery\bower_components" />
+      <recent name="C:\Users\usuario\WebstormProjects\I-Gallery\videos" />
     </key>
   </component>
   <component name="RunManager">
@@ -314,11 +405,19 @@
       <workItem from="1496173094237" duration="7990000" />
       <workItem from="1496200920062" duration="5156000" />
       <workItem from="1496256970336" duration="40000" />
+      <workItem from="1496267531443" duration="1051000" />
+      <workItem from="1496272098389" duration="9911000" />
+      <workItem from="1496283659949" duration="2433000" />
+      <workItem from="1496286891247" duration="2237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="22491000" />
+=======
+    <option name="totallyTimeSpent" value="28819000" />
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
@@ -354,11 +453,74 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="9" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding>
+            <element signature="n#a-entity#6;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#7;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#10;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/11/11-settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="n#a-entity#8;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#11;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding />
+=======
+          <folding>
+            <element signature="n#a-entity#6;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#7;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#10;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
         </state>
       </provider>
     </entry>
@@ -383,6 +545,10 @@
         <state relative-caret-position="187">
           <caret line="11" column="48" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="11" selection-end-column="48" />
           <folding>
+<<<<<<< HEAD
+=======
+            <element signature="n#a-entity#8;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
             <element signature="n#a-entity#11;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -396,11 +562,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
+    <entry file="file://$PROJECT_DIR$/movil.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding />
+=======
+          <folding>
+            <element signature="n#a-entity#6;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#7;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#10;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
         </state>
       </provider>
     </entry>
@@ -425,6 +599,10 @@
         <state relative-caret-position="697">
           <caret line="41" column="101" lean-forward="true" selection-start-line="41" selection-start-column="101" selection-end-line="41" selection-end-column="101" />
           <folding>
+<<<<<<< HEAD
+=======
+            <element signature="n#a-entity#8;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
             <element signature="n#a-entity#11;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -490,16 +668,28 @@
         <state relative-caret-position="187">
           <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
           <folding>
+<<<<<<< HEAD
+=======
+            <element signature="n#a-entity#8;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
             <element signature="n#a-entity#11;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
+    <entry file="file://$PROJECT_DIR$/movil.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+<<<<<<< HEAD
           <folding />
+=======
+          <folding>
+            <element signature="n#a-entity#6;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#7;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#10;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
         </state>
       </provider>
     </entry>
@@ -511,11 +701,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
+    <entry file="file://$PROJECT_DIR$/movil.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding />
+=======
+          <folding>
+            <element signature="n#a-entity#6;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#7;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#10;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
         </state>
       </provider>
     </entry>
@@ -540,6 +738,10 @@
         <state relative-caret-position="187">
           <caret line="11" column="48" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="11" selection-end-column="48" />
           <folding>
+<<<<<<< HEAD
+=======
+            <element signature="n#a-entity#8;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
             <element signature="n#a-entity#11;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -553,11 +755,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
+    <entry file="file://$PROJECT_DIR$/movil.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding />
+=======
+          <folding>
+            <element signature="n#a-entity#6;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#7;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#10;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
         </state>
       </provider>
     </entry>
@@ -582,6 +792,10 @@
         <state relative-caret-position="697">
           <caret line="41" column="101" lean-forward="true" selection-start-line="41" selection-start-column="101" selection-end-line="41" selection-end-column="101" />
           <folding>
+<<<<<<< HEAD
+=======
+            <element signature="n#a-entity#8;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
             <element signature="n#a-entity#11;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -603,12 +817,18 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/11/11-settings.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding />
         </state>
+=======
+    <entry file="file://$PROJECT_DIR$/img/classic/BeFunky Collage.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/img/text/E-gallery5.jpg">
@@ -647,6 +867,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="576">
           <caret line="76" column="75" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="75" />
           <folding />
@@ -669,6 +890,62 @@
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="n#a-entity#11;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+=======
+        <state relative-caret-position="287">
+          <caret line="148" column="4" lean-forward="true" selection-start-line="148" selection-start-column="4" selection-end-line="149" selection-end-column="14" />
+          <folding>
+            <element signature="n#a-entity#8;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#11;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="304" column="18" lean-forward="true" selection-start-line="304" selection-start-column="18" selection-end-line="304" selection-end-column="18" />
+          <folding>
+            <element signature="n#a-entity#6;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#7;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#10;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/11/11-settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/11/12-settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movil_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="330" column="39" lean-forward="true" selection-start-line="330" selection-start-column="39" selection-end-line="330" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fast.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="61" column="75" lean-forward="false" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="75" />
+          <folding>
+            <element signature="n#a-entity#6;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#7;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a-entity#9;n#a-scene#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#10094#10196#0" expanded="false" />
+>>>>>>> 2bf4832bc7f46f753f002fd0568a171ed6516a71
           </folding>
         </state>
       </provider>
