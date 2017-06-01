@@ -1,107 +1,320 @@
-<!-- By Ada Rose Edwards @lady_ada_king. -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Vaporwave - A-Frame</title>
-    <meta name="description" content="Vaporwave aesthetic text By Ada Rose Edwards (@lady_ada_king).">
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+<head>
+  <title>Vaporwave - A-Frame</title>
+  <meta name="description" content="Vaporwave aesthetic text By Ada Rose Edwards (@lady_ada_king).">
+  <script src="bower_components/aframe.min.js"></script>
 
-    <script src="node_modules/aframe-look-at-component/dist/aframe-look-at-component.min.js"></script>
-    <script src="bower_components/Keypress/keypress.js"></script>
-    <script src="bower_components/fetch/fetch.js"></script>
-    <script src="js/global-functions.js"></script>
-  </head>
-  <body>
-    <a-scene >
-      <a-assets>
-        <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/http://i.imgur.com/1hyyIUi.jpg" crossorigin="anonymous" />
-        <img src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" id="grid" crossorigin="anonymous">
-        <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
-        <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
+  <script src="bower_components/aframe-look-at-component.min.js"></script>
+  <script src="bower_components/Keypress/keypress.js"></script>
+  <script src="bower_components/fetch/fetch.js"></script>
+  <script src="js/global-functions.js"></script>
+</head>
+<body>
+
+<a-scene>
+
+  <a-assets>
+
+    <a-asset-item id="mv-obj" src="galery/galeria.obj"></a-asset-item>
+    <a-asset-item id="mv-mtl" src="galery/galeria.mtl"></a-asset-item>
+    <!-- loby -->
+    <img id="mtext" src="img/text/E-gallery2.jpg" crossorigin="anonymous"/>
+    <img id="vtext" src="img/text/E-gallery3.jpg" crossorigin="anonymous"/>
+    <img id="clasic_text" src="img/text/E-gallery4.jpg" crossorigin="anonymous"/>
+
+    <!-- Principal -->
+    <img id="clasic1" src="img/classic/BeFunky Collage.jpg" crossorigin="anonymous" />
+    <img id="memes1"src="img/memes/angel.png" crossorigin="anonymous" />
+    <img id="video1" src="img/video/tv1.png" crossorigin="anonymous" >
+    <img id="sculp1" src="img/sculpture/cesar.png" crossorigin="anonymous" />
+
+    <!--Iniccio-->
+    <img id="initbridge" src="img/text/E-gallery5.jpg" crossorigin="anonymous" />
+    <img id="init" src="img/text/E-gallery.jpg" crossorigin="anonymous" />
+
+    <!-- clasic -->
+    <img id="cl-t1" src="img/classic/41-min.jpg" crossorigin="anonymous" />
+    <img id="cl-c1" src="img/classic/BeFunky%20Collage.jpg" crossorigin="anonymous" />
+    <img id="cl-c2" src="img/classic/BeFunky%20Collage2.jpg" crossorigin="anonymous" />
+    <img id="cl-c3" src="img/classic/BeFunky%20Collage3.jpg" crossorigin="anonymous" />
+    <img id="cl-c4" src="img/classic/BeFunky%20Collage%20%204.jpg" crossorigin="anonymous" />
+    <img id="cl-c5" src="img/classic/BeFunky%20Collage5.jpg" crossorigin="anonymous" />
+    <img id="cl-c6" src="img/classic/BeFunky%20Collage%206.jpg" crossorigin="anonymous" />
+    <img id="cl-c8" src="img/classic/BeFunky%20Collage%208.jpg" crossorigin="anonymous" />
+
+    <img id="buda" src="img/sculpture/buda.png" crossorigin="anonymous" />
+    <img id="busto" src="img/sculpture/busto.png" crossorigin="anonymous" />
+    <img id="david" src="img/sculpture/david.png" crossorigin="anonymous" />
+    <img id="fat" src="img/sculpture/fat.png" crossorigin="anonymous" />
+    <img id="roma" src="img/sculpture/roma.png" crossorigin="anonymous" />
+    <img id="bustino" src="img/sculpture/julio.gif" crossorigin="anonymous" />
+    <img id="medu" src="img/sculpture/medu.png" crossorigin="anonymous" />
+    <img id="roman" src="img/sculpture/roman-statue.png" crossorigin="anonymous" />
+    <img id="sculpture" src="img/sculpture/Sculpture.png" crossorigin="anonymous" />
+    <img id="zeus" src="img/sculpture/zeus.png" crossorigin="anonymous" />
+    <img id="venus" src="img/sculpture/atena.png" crossorigin="anonymous" />
+
+    <img id="leon" src="img/sculpture/leon.png" crossorigin="anonymous" />
+    <img id="sireno" src="img/sculpture/sireno.png" crossorigin="anonymous" />
+    <img id="vaco" src="img/sculpture/vaco.png" crossorigin="anonymous" />
+
+    <img id="adidas"src="img/memes/angel.png"crossorigin="anonymous" />
+    <img id="bano"src="img/memes/bano.png" crossorigin="anonymous" />
+    <img id="chino"src="img/memes/chino.png" crossorigin="anonymous" />
+    <img id="davidpix"src="img/memes/davidpix.gif" crossorigin="anonymous" />
+    <img id="facepalm"src="img/memes/facepalm.jpg" crossorigin="anonymous" />
+    <img id="car"src="img/memes/car.jpg" crossorigin="anonymous" />
+    <img id="original"src="img/memes/original.jpg" crossorigin="anonymous" />
+    <img id="paint"src="img/memes/paint.png" crossorigin="anonymous" />
+    <img id="ola"src="img/memes/ola.jpg" crossorigin="anonymous" />
+    <img id="pepe"src="img/memes/pepe.png" crossorigin="anonymous" />
 
 
+    <img id="tv2"src="img/video/tv2.png" crossorigin="anonymous" />
+    <img id="tv3"src="img/video/tv3.png" crossorigin="anonymous" />
+    <img id="tv4"src="img/video/tv4.png" crossorigin="anonymous" />
 
 
-        <!--<video id="pants" autoplay loop="true" src="videos/memes.mp4"></video>-->
-        <img id="clasic1" src="img/classic/BeFunky Collage.jpg"/>
-        <img id="memes1"src="img/memes/angel.png"/>
-        <img id="video1" src="img/video/tv1.png">
-        <img id="sculp1" src="img/sculpture/thinker.png"/>
+    <!-- Videos -->
+    <video id="vid1" autoplay loop="true" src="videos/vid1.mp4"  crossorigin="anonymous"></video>
+    <video id="vid2" autoplay loop="true" src="videos/vid2.mp4"  crossorigin="anonymous"></video>
+    <video id="vid3" autoplay loop="true" src="videos/vid3.mp4"  crossorigin="anonymous"></video>
+    <video id="vid4" autoplay loop="true" src="videos/vid4.mp4"  crossorigin="anonymous"></video>
+    <video id="vid5" autoplay loop="true" src="videos/vid5.mov"  crossorigin="anonymous"></video>
+    <video id="vid6" autoplay loop="true" src="videos/vid6.mov"  crossorigin="anonymous"></video>
+    <video id="vid7" autoplay loop="true" src="videos/vid7.mov"  crossorigin="anonymous"></video>
+    <!-- <img id="ms-half" src="assets/spherical/ms-window-half.jpg"> -->
+    <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/http://i.imgur.com/1hyyIUi.jpg" crossorigin="anonymous" />
+    <img src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" id="grid" crossorigin="anonymous">
+    <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
+    <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
+
+    <!--<video id="pants" autoplay loop="true" src="videos/memes.mp4"></video>-->
+    <a-asset-item id="dawningFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2FdawningOfANewDayRegular.typeface.json?1490305922844"></a-asset-item>
+    <a-asset-item id="exoFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150"></a-asset-item>
+    <a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
+
+  </a-assets>
+
+  <!-- Sky and floor -->
+  <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+
+  <a-entity id="vapor" geometry="primitive: plane" material="color: blue"
+            position="0 0 0" sound="src: url(music/test.mp3); autoplay: true; volume:1"></a-entity>
 
 
+  <!-- World Elements -->
+  <a-entity id="world">
 
-        <a-asset-item id="galery" src="galery/galeria.obj"></a-asset-item>
-        <a-asset-item id="galery-mtl" src="galery/galeria.mtl"></a-asset-item>
-        <a-asset-item id="dawningFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2FdawningOfANewDayRegular.typeface.json?1490305922844"></a-asset-item>
-        <a-asset-item id="exoFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150"></a-asset-item>
-        <a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
+    <!-- Environment model -->
+    <a-entity obj-model="obj: #mv-obj; mtl: #mv-mtl" position="0 0 0"></a-entity>
 
-      </a-assets>
+  </a-entity>
 
 
-      <a-entity id=#world obj-model="obj: #galery; mtl: #galery-mtl" position="0 0 0" ></a-entity>
-      <a-entity scale="2 2 2" geometry="primitive: torusKnot" position="0 6 -5" material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
-        <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
-      </a-entity>
+  <a-entity
+          geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
+          material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;"></a-entity>
 
-      <!-- Sala central-->
-      <a-entity position="0 1 -45">
-        <a-camera  look-controls wasd-controls>
-          <a-cursor color="#FF0000"></a-cursor>
-        </a-camera>
-      </a-entity>
-      <a-image id="es1-s1" position="-10 3.2 4.9" src="#clasic1" look-at="[camera]" >
-      </a-image>
-      <a-image id="es2-s1" position="8.9 3.2 -15.6" src="#memes1" look-at="[camera]" >
-      </a-image>
-      <a-image id="es3-s1" position="-9.7 3.2 -15.8"src="#video1" look-at="[camera]" >
-      </a-image>
-      <a-image id="es4-s1" position="8.4 3.2 4.6" src="#sculp1" look-at="[camera]" >
-      </a-image>
-      <!-- Sala inicial -->
-      <a-image id="es4-s1" position="0 10 -48" src="#lememes" width="20" height="10" >
-      </a-image>
-      <!-- Sala clasica -->
-      <!-- Sala video
-      <a-video src="#pants" width="16" height="9" position="0 1 -30"></a-video>
-      -->
-      <a-entity id="memes-text" position="0 1 -30" text-geometry="value: Le memes; font: #font-memes; style: italic; size:10 ; weight: bold; height: 0;"
-                material="shader: flat; color: white"></a-entity>
-      <a-image id="es4-s1" position="8.7 3.2 4.6" src="#pepe" look-at="[camera]" >
-      </a-image>
+  <a-entity light="color: white; intensity: 0.8; type: ambient;" visible=""></a-entity>
+  <a-entity light="color: white; intensity: 0.2" position="5 5 5"></a-entity>
+  <a-entity light="color: white; intensity: 0.2" position="-5 5 15"></a-entity>
+  <a-entity light="color: white; intensity: 0.8 type: ambient;"></a-entity>
 
-      <a-entity id="vapor" geometry="primitive: plane" material="color: blue"
-          position="0 0 0" sound="src: url(music/test.mp3); autoplay: true; volume:0.3"></a-entity>
-      <a-entity id="pant" geometry="primitive: plane" material="color: blue"
-                position="0 0 -45" sound="src: url(music/pants.mp3); autoplay: true; volume:0.3"></a-entity>
+  <a-entity id="text-room">
+    <a-image id="txt-v" position="-14.93 10 -3" src="#vtext" scale="7 7 0" rotation="0 90 0">
+    </a-image>
+    <a-image id="txt-m" position="14.93 10 -3" src="#mtext" scale="7 7 0" rotation="0 -90 0">
+    </a-image>
+    <a-image id="txt-c" position="5 10 9.8" src="#clasic_text" scale="7 7 0" rotation="0 -180 0">
+    </a-image>
+  </a-entity>
+  <!-- Sala central-->
+  <a-entity id="es">
+    <a-entity scale="2 2 2" geometry="primitive: torusKnot" position="0 6 -5" material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
+    </a-entity>
+    <a-image id="es1-s1" position="-10 5 4.9" src="#clasic1" look-at="#human-camera" scale="4 4 0">
+    </a-image>
+    <a-image id="es2-s1" position="8.9 4 -16" src="#memes1" look-at="#human-camera" scale="4 4 0">
+    </a-image>
+    <a-image id="es3-s1" position="-9.7 3.2 -15.8" src="#video1" look-at="#human-camera" scale="4 4 0">
+    </a-image>
+    <a-image id="es4-s1" position="9.5 4 5.5" src="#sculp1" look-at="#human-camera" scale="4 4 0">
+    </a-image>
+  </a-entity>
+  <!-- Sala inicial -->
+  <a-entity id="si">
+    <a-image id="init-1" position="0 5 -48" src="#init" scale="20 20 0" >
+    </a-image>
+    <a-image id="init-2" position="5 10 -30" src="#initbridge" rotation="45 -90 -90" scale="15 15 0"   >
+    </a-image>
+  </a-entity>
 
-      <a-entity position="0 5 0" rotation="5 0 0">
-        <a-entity
-                rotation="0 0 5"
-                position="0 2 0.2"
-                text-geometry="value: Virtual Reality; font: #dawningFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;"
-                material="color:lavenderblush; metalness:1; roughness: 0; sphericalEnvMap: #pink;"
-        ></a-entity>
+  <a-entity id="internet">
+    <!-- zona Izquierda -->
+    <a-image id="i1-s1" position="42.85 4 -13.84" src="#car"  scale="4 4 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
+    <a-image id="i1-s2" position="42.85 4 6.004" src="#bano"  scale="4 4 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
+    <a-image id="i1-s3" position="42.85 4 2.05" src="#chino"  scale="4 4 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
 
-        <a-entity position="-0.5 0.5 -0.5" scale="0.6 1.2 1" text-geometry="value: VAPORWAVE; font: #exoFont; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:pink; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity>
+    <a-image id="i1-s4" position="42.85 4 -2.11"src="#original"  scale="4 4 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
 
-        <a-entity position="1 0 0.3" text-geometry="value: Aesthetic; font: #exoItalicFont; style: italic; size: 0.8; weight: bold; height: 0;"
-                  material="shader: flat; color: white"></a-entity>
-        <a-entity position="1 0 0.3" text-geometry="value: Aesthetic; font: #exoItalicFont; style: italic; size: 0.8; weight: bold; height: 0; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"
-                  material="shader: flat; color: white; transparent: true; opacity: 0.4"></a-entity>
-      </a-entity>
 
-      <a-entity
-        geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
-        material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;"></a-entity>
+    <!-- zona derecha -->
+    <a-image id="i2-s1" position="34 4 -13.84" src="#paint" scale="4 4 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
+    <a-image id="i2-s2" position="34 4 6.004" src="#facepalm" scale="4 4 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
+    <a-image id="i2-s3" position="34 4 2.05" src="#davidpix"scale="4 4 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
 
-      <a-entity light="color: #ccccff; intensity: 0.8; type: ambient;" visible=""></a-entity>
-      <a-entity light="color: ffaaff; intensity: 0.1" position="5 5 5"></a-entity>
-      <a-entity light="color: white; intensity: 0.1" position="-5 5 15"></a-entity>
-      <a-entity light="color: white; intensity: 0.8 type: ambient;"></a-entity>
+    <a-image id="i2-s4" position="34 3.5 -2.11"src="#ola"  scale="4 4 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
 
-      <a-sky src="#sky" rotation="0 -90 0"></a-sky>
-    </a-scene>
+    <a-image id="i2-tec2" position="39.070 23 -5.533" src="#pepe"  rotation="90 90 0" scale="33 33 0"></a-image>
 
-  </body>
+    <a-image id="i2-tec" position="39.070 22.066 -5.533" src="#video1"  rotation="90 90 0" scale="33 33 0">
+
+    </a-image>
+
+
+    <a-video src="#vid2" width="32" height="18" position="48.6 11.2 -5.38" rotation="0 90 0" ></a-video>
+    <a-video src="#vid3" width="32" height="18" position="38.09 11.058 -20.98" rotation="0 180 0" ></a-video>
+    <a-video src="#vid4" width="32" height="18" position="38.09 11.058 9.970" rotation="0 -180 0" ></a-video>
+  </a-entity>
+
+  <!-- Sala clasica -->
+  <a-entity id="cl">
+    <!--- Galeria -->
+
+    <a-image id="cl3-g2" position="7.5 14.17 45.93" src="#cl-c2" scale="15 15 0" rotation=" -10 0 0">
+    </a-image>
+    <a-image id="cl2-g4" position="-7.5 14.178 45.93" src="#cl-c4" scale="15 15 0" rotation=" -10 0 0">
+    </a-image>
+
+    <a-image id="cl3-g8" position="-14.25 10 39.90" src="#cl-c8" scale="10 10 0" rotation=" 10 90 0">
+    </a-image>
+    <a-image id="cl2-g6" position="-14.25 10 29.90" src="#cl-c6" scale="10 10 0" rotation=" 10 90 0">
+    </a-image>
+
+    <a-image id="cl3-g5" position="14.25 10 39.90" src="#cl-c5" scale="10 10 0" rotation=" 10 -90 0">
+    </a-image>
+    <a-image id="cl2-g3" position="14.25 10 29.90" src="#cl-c3" scale="10 10 0" rotation=" 10 -90 0">
+    </a-image>
+
+
+    <!-- zona derecha -->
+    <a-image id="cl1-s2" position="11.8 3.5 24.28" src="#buda" look-at="#human-camera"  scale="3 3 0">
+    </a-image>
+    <a-image id="cl3-s2" position="11.8 3.5 32.05" src="#sculp1" look-at="#human-camera"  scale="3 3 0" >
+    </a-image>
+    <a-image id="cl2-s2" position="11.8 4 28" src="#david" look-at="#human-camera" scale="3 4 0">
+    </a-image>
+
+    <a-image id="cl1-s1" position="7.82 3.5 24.28" src="#busto" look-at="#human-camera" scale="2 2 0">
+    </a-image>
+    <a-image id="cl3-s1" position="7.82 3.5 32.05"src="#medu" look-at="#human-camera" scale="2 2 0">
+    </a-image>
+    <a-image id="cl2-s1" position="7.82 3.5 28" src="#roman" look-at="#human-camera" scale="2 2 0">
+    </a-image>
+
+    <!--  zona izquierda -->
+    <a-image id="cl1-s3" position="-12 4 24.28" src="#sculpture" look-at="#human-camera" scale="3 4 0">
+    </a-image>
+    <a-image id="cl3-s3" position="-12 4 32.05"src="#zeus" look-at="#human-camera" scale="3 4 0">
+    </a-image>
+    <a-image id="cl2-s3" position="-12 4 28" src="#venus" look-at="#human-camera" scale="3 4 0">
+    </a-image>
+
+    <a-image id="cl1-s4" position="-7.82 3.5 24.28" src="#roma" look-at="#human-camera" scale="2 2 0">
+    </a-image>
+    <a-image id="cl3-s4" position="-7.82 3.5 32.05"src="#bustino" look-at="#human-camera" scale="2 2 0">
+    </a-image>
+    <a-image id="cl2-s4" position="-7.82 3.5 28" src="#fat" look-at="#human-camera" scale="2 2 0">
+    </a-image>
+
+    <!-- centro -->
+    <a-image id="cl1-c5" position="4.6 4 41.37" src="#vaco" scale="4 4 0">
+    </a-image>
+    <a-image id="cl1-c6" position="-4.6 4 41.37" src="#vaco" scale="4 4 0" rotation="0 180 0">
+    </a-image>
+    <a-image id="cl1-c3" position="4.6 4 39.04" src="#sireno" scale="4 4 0">
+    </a-image>
+    <a-image id="cl1-c4" position="-4.6 4 39.04" src="#sireno" scale="4 4 0" rotation="0 180 0">
+    </a-image>
+
+    <a-image id="cl1-c7" position="0 5 40" src="#zeus" scale="6 6 0">
+    </a-image>
+    <a-image id="cl1-c8" position="-1.05 3.5 38.82" src="#venus" scale="3 3 0">
+    </a-image>
+    <a-image id="cl1-c9" position="1.05 3.5 38.82" src="#sculp1" scale="3 3 0" rotation="0 180 0">
+    </a-image>
+    <a-image id="cl1-c10" position="0 3 36.35" src="#sculpture" scale="2 2 0">
+    </a-image>
+
+    <a-image id="cl1-c1" position="4.6 3.5 36.35" src="#leon" scale="3 3 0">
+    </a-image>
+    <a-image id="cl1-c2" position="-4.6 3.5 36.35" src="#leon" scale="3 3 0" rotation="0 180 0">
+    </a-image>
+
+    <a-image id="i2-tec2" position="0 22 33.9" src="#cl-t1"  rotation="270 0 0" scale="30 30 0"></a-image>
+
+
+  </a-entity>
+  <!-- Sala video
+
+  <a-video src="#pants" width="16" height="9" position="0 1 -30"></a-video>
+  -->
+  <a-entity id="vd">
+    <a-video src="#vid5" width="16" height="9" position="-39.46 10 9.92" rotation="0 -180 0" ></a-video>
+    <a-video src="#vid1" width="32" height="18" position="-48.87 10 -5.5" rotation="0 90 0" ></a-video>
+    <a-video src="#vid6" width="16" height="9" position="-39.46 10 -20.86" rotation="0 360 0" ></a-video>
+    <a-video src="#vid7" width="32" height="22" position="-38.968 22.756 -5.885" rotation="90 90 0" ></a-video>
+
+    <a-image id="v-c1" position="-37.05 3.2 -2.15" src="#tv2" rotation=" 10 90 0" scale="3 3 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
+    <a-image id="v-c2" position="-37.05 3.2 5" src="#tv3" rotation=" 10 90 0" scale="3 3 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
+
+    <a-image id="v-c3" position="-37.05 3.2 -15.9" src="#tv4"  rotation=" 10 -90 0" scale="3 3 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
+
+    <a-image id="v-c1" position="-33.05 3.2 -2.15" src="#tv2" rotation=" 10 90 0" scale="3 3 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
+    <a-image id="v-c2" position="-33.05 3.2 5" src="#tv3" rotation=" 10 90 0" scale="3 3 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
+
+    <a-image id="v-c3" position="-33.05 3.2 -15.9" src="#tv4"  rotation=" 10 -90 0" scale="3 3 0">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-image>
+
+  </a-entity>
+
+  <!-- Human Camera, put down here for a reason, but I can't remember why -->
+  <a-camera id="human-camera" position="0 2 -45" wasd-controls active="true" fov="70">
+    <a-entity cursor="fuse: true; maxDistance: 50; timeout: 500" position="0 0 -2" geometry="primitive: plane; height: .05; width: .05"  material="color: #fff"></a-entity>
+  </a-camera>
+
+</a-scene>
+
+
+</body>
 </html>
